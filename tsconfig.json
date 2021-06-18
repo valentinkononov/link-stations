@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "rootDir": ".",
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "target": "es2019",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "baseUrl": "./",
+        "incremental": true,
+        "esModuleInterop": true,
+        "allowJs": true,
+        "paths": {
+            "@rave/models/*": ["libs/models/src/*"],
+            "@rave/services": ["libs/services/src"],
+            "@rave/services/*": ["libs/services/src/*"],
+            "@rave/testUtils": ["libs/testUtils"],
+            "@rave/testUtils/*": ["libs/testUtils/*"],
+            "@rave/utils": ["libs/utils"],
+            "@rave/utils/*": ["libs/utils/*"],
+            "@rave/core": ["libs/core"],
+            "@rave/core/*": ["libs/core/*"],
+            "@rave/store": ["apps/react/src/redux/redux.store.ts"],
+            "@rave/selectors/createConstantSize": [
+                "apps/react/src/modules/annotation/selectors/createConstantSize.selector.ts"
+            ]
+        },
+        "jsx": "react"
+    },
+    "exclude": ["node_modules", ".git", "dist", "build", "docs", "cloudformation"]
+}
